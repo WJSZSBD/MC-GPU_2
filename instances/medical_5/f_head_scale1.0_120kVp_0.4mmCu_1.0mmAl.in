@@ -1,0 +1,61 @@
+# >>>> INPUT FILE FOR MC-GPU v1.3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# [SECTION SIMULATION CONFIG v.2009-05-12]
+7678800000
+271828182
+1
+512
+1024
+
+# [SECTION SOURCE v.2011-07-12]
+energy/120kVp_0.4mmCu_1.0mmAl.spc
+12.07 -62.93 10.648
+0 1 0
+-1 -1
+
+# [SECTION IMAGE DETECTOR v.2009-12-02]
+1
+output/medical_5/proj_f_head_scale1.0_120kVp_0.4mmCu_1.0mmAl/f_head_scale1.0_120kVp_0.4mmCu_1.0mmAl
+324 237
+39.9168 29.1984
+125
+
+# [SECTION CT SCAN TRAJECTORY v.2011-10-25]
+61
+6.0
+0 3600
+75
+0.0
+
+# [SECTION DOSE DEPOSITION v.2012-12-12]
+NO
+NO
+dose
+1 3
+1 1
+1 2
+
+# [SECTION VOXELIZED GEOMETRY FILE v.2009-11-30]
+vox/medical_5/vox/f_head_scale1.0.vox
+
+# [SECTION MATERIAL FILE LIST v.2009-11-30]
+material/adipose_ICRP110__5-120keV.mcgpu.gz
+material/air__5-120keV.mcgpu.gz
+material/blood_ICRP110__5-120keV.mcgpu.gz
+material/bone_ICRP110__5-120keV.mcgpu.gz
+material/brain_ICRP110__5-120keV.mcgpu.gz
+material/breast_75-25_Hammerstein__5-120keV.mcgpu.gz
+material/cartilage_ICRP110__5-120keV.mcgpu.gz
+material/connective_Woodard__5-120keV.mcgpu.gz
+material/glands_others_ICRP110__5-120keV.mcgpu.gz
+material/liver_ICRP110__5-120keV.mcgpu.gz
+material/lung_ICRP110__5-120keV.mcgpu.gz
+material/muscle_ICRP110__5-120keV.mcgpu.gz
+material/PMMA__5-120keV.mcgpu.gz
+material/red_marrow_Woodard__5-120keV.mcgpu.gz
+material/skin_ICRP110__5-120keV.mcgpu.gz
+material/soft_tissue_ICRP110__5-120keV.mcgpu.gz
+material/stomach_intestines_ICRP110__5-120keV.mcgpu.gz
+material/titanium__5-120keV.mcgpu.gz
+material/water__5-120keV.mcgpu.gz
+# >>>> END INPUT FILE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

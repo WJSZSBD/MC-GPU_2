@@ -1,0 +1,47 @@
+# 
+#     *****************************************************************************
+#     ***         MC-GPU, version 1.3 (http://code.google.com/p/mcgpu/)         ***
+#     ***                                                                       ***
+#     ***                     Andreu Badal (Andreu.Badal-Soler@fda.hhs.gov)     ***
+#     *****************************************************************************
+# 
+#  *** SIMULATION IN THE GPU USING CUDA ***
+#
+#
+#  3D dose deposition map (and dose uncertainty) created tallying the energy deposited by photons inside each voxel of the input geometry.
+#  Electrons were not transported and therefore we are approximating that the dose is equal to the KERMA (energy released by the photons alone).
+#  This approximation is acceptable when there is electronic equilibrium and when the range of the secondary electrons is shorter than the voxel size.
+#  Usually the doses will be acceptable for photon energies below 1 MeV. The dose estimates may not be accurate at the interface of low density volumes.
+#
+#  The 3D dose deposition is reported in binary form in the .raw files (data given as 32-bit floats). 
+#  To reduce the memory use and the reporting time this text output reports only the 2D dose at the Z plane at the level
+#  of the source focal spot: z_coord = 1 (z_coord in ROI = 1)
+#
+#  The total dose deposited in each different material is reported to the standard output.
+#  The dose is calculated adding the energy deposited in the individual voxels within the dose ROI and dividing by the total mass of the material in the ROI.
+#
+#
+#  Voxel size:  10.000000 x 10.000000 x 14.999999 = 1499.999754 cm^3
+#  Number of voxels in the reported region of interest (ROI) X, Y and Z:
+#      3  1  2
+#  Coordinates of the ROI inside the voxel volume = X[1,3], Y[1,1], Z[1,2]
+#
+#  Voxel dose units: eV/g per history
+#  X rows given first, then Y, then Z. One blank line separates the different Y, and two blanks the Z values (GNUPLOT format).
+#  The dose distribution is also reported with binary FLOAT values (.raw file) for easy visualization in ImageJ.
+# 
+#    [DOSE]   [2*standard_deviation]
+# =====================================
+3.394420 0.008928
+4.339646 0.010106
+4.262094 0.010115
+
+
+#   ****** DOSE REPORT: TOTAL SIMULATION PERFORMANCE FOR ALL PROJECTIONS ******
+#       Total number of simulated x rays: 100006400
+#       Simulated x rays per projection:  100006400
+#       Total simulation time [s]:  4.80
+#       Total speed [x-rays/s]:  20856165.90
+
+#       Total energy absorved inside the dose ROI: 26.41666 keV/hist
+
